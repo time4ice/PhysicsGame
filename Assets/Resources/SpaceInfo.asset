@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd3f3bce276f4b26bcac3885ff5a642, type: 3}
+  m_Name: SpaceInfo
+  m_EditorClassIdentifier: 
+  _minForce: 800
+  _maxForce: 1000
+  _minTimeForce: 1
+  _maxTimeForce: 1
+  _minAngle: 0
+  _maxAngle: 90
+  _touchdownErrorLimits: {x: -10, y: 10}

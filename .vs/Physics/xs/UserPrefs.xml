@@ -1,0 +1,95 @@
+﻿<Properties StartupConfiguration="{2F00C848-03D2-452F-506A-EE212A5702EC}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controller/ProfileController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Controller/SpaceController.cs" Line="59" Column="40" />
+      <File FileName="Assets/Scripts/Controller/PlaneController.cs" />
+      <File FileName="Assets/Scripts/Physics/ForceImpulsePhysics.cs" />
+      <File FileName="Assets/Scripts/Physics/ThrownBodyPhysics.cs" />
+      <File FileName="Assets/Scripts/Physics/InclinedPlanePhysics.cs" />
+      <File FileName="Assets/Scripts/Controller/AvailablePlanesController.cs" Line="57" Column="9" />
+      <File FileName="Assets/Scripts/Controller/AvailablePlanetsController.cs" Line="60" Column="1" />
+      <File FileName="Assets/Scripts/Controller/AvailableRocketsController.cs" Line="58" Column="89" />
+      <File FileName="Assets/Scripts/Controller/HomeController.cs" />
+      <File FileName="Assets/Scripts/Controller/IController.cs" />
+      <File FileName="Assets/Scripts/Controller/PlaneRetryWindowController.cs" Line="44" Column="6" />
+      <File FileName="Assets/Scripts/DataControl/LocalDataController.cs" Line="23" Column="1" />
+      <File FileName="Assets/Scripts/DataHolders/GameDataHolder.cs" />
+      <File FileName="Assets/Scripts/DataHolders/PlaneDataHolder.cs" />
+      <File FileName="Assets/Scripts/DataHolders/PrefabsHolder.cs" />
+      <File FileName="Assets/Scripts/DataHolders/SpaceDataHolder.cs" />
+      <File FileName="Assets/Scripts/Extentions/Extentions.cs" />
+      <File FileName="Assets/Scripts/Installers/GameInstaller.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Loaders/HomeLoader.cs" />
+      <File FileName="Assets/Scripts/Progress/Progress.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Progress/ProgressHandler.cs" Line="2" Column="42" />
+      <File FileName="Assets/Scripts/ScriptableObjects/Plane/PlaneInfo.cs" />
+      <File FileName="Assets/Scripts/ScriptableObjects/Plane/PlaneMaterial.cs" />
+      <File FileName="Assets/Scripts/Views/Window/RetryWindow.cs" />
+      <File FileName="Assets/UIParticleEffects/Scripts/UIParticleSystem.cs" Line="163" Column="23" />
+      <File FileName="Assets/Scripts/Views/RocketView.cs" Line="47" Column="1" />
+      <File FileName="Assets/Scripts/Views/SpaceView.cs" Line="100" Column="42" />
+      <File FileName="Assets/Scripts/Views/PlaneView.cs" Line="64" Column="34" />
+      <File FileName="Assets/Scripts/Views/RotationSliderView.cs" Line="9" Column="17" />
+      <File FileName="Assets/Scripts/Views/DestinationView.cs" Line="18" Column="8" />
+      <File FileName="Assets/Scripts/Installers/HomeInstaller.cs" Line="17" Column="70" />
+      <File FileName="Assets/Scripts/Installers/PlaneInstaller.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Installers/SpaceInstaller.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/Controller/ProfileController.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/WindowPool/ViewPool.cs" Line="6" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Physics" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Controller" expanded="True">
+                  <Node name="ProfileController.cs" selected="True" />
+                </Node>
+                <Node name="DataControl" expanded="True" />
+                <Node name="DataHolders" expanded="True" />
+                <Node name="Extentions" expanded="True" />
+                <Node name="Installers" expanded="True" />
+                <Node name="Loaders" expanded="True" />
+                <Node name="Physics" expanded="True" />
+                <Node name="Progress" expanded="True" />
+                <Node name="ScriptableObjects" expanded="True">
+                  <Node name="Plane" expanded="True" />
+                  <Node name="Space" expanded="True" />
+                </Node>
+                <Node name="Views" expanded="True">
+                  <Node name="Window" expanded="True" />
+                </Node>
+                <Node name="WindowPool" expanded="True" />
+              </Node>
+              <Node name="UIParticleEffects" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5dbe1cc8-03b6-4079-8bc6-4bff2a863564" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-6363dfa59c2624014a5ae0f31f00edc2" relfile="Temp/UnityTempFile-6363dfa59c2624014a5ae0f31f00edc2" line="64" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/Views/r170d33r.272~" relfile="Assets/Scripts/Views/r170d33r.272~" line="24" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/Controller/wcbdd300.hhf~" relfile="Assets/Scripts/Controller/wcbdd300.hhf~" line="41" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-5055de694cd58498ebbcad3c48f24f0a" relfile="Temp/UnityTempFile-5055de694cd58498ebbcad3c48f24f0a" line="14" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-a98e677caaca6414b8929c25239b536d" relfile="Temp/UnityTempFile-a98e677caaca6414b8929c25239b536d" line="17" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-a98e677caaca6414b8929c25239b536d" relfile="Temp/UnityTempFile-a98e677caaca6414b8929c25239b536d" line="18" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-cfda9b0686a774afb8441526bb819bf5" relfile="Temp/UnityTempFile-cfda9b0686a774afb8441526bb819bf5" line="17" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/DataHolders/PrefabsHolder.cs" relfile="Assets/Scripts/DataHolders/PrefabsHolder.cs" line="17" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/DataHolders/SpaceDataHolder.cs" relfile="Assets/Scripts/DataHolders/SpaceDataHolder.cs" line="21" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/Extentions/Extentions.cs" relfile="Assets/Scripts/Extentions/Extentions.cs" line="8" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/UIParticleEffects/Scripts/UIParticleSystem.cs" relfile="Assets/UIParticleEffects/Scripts/UIParticleSystem.cs" line="101" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/Progress/ProgressHandler.cs" relfile="Assets/Scripts/Progress/ProgressHandler.cs" line="19" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/Progress/ProgressHandler.cs" relfile="Assets/Scripts/Progress/ProgressHandler.cs" line="21" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
