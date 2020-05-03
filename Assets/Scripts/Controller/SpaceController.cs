@@ -28,16 +28,19 @@ public class SpaceController: IController
 
     private SpaceDataHolder _spaceDataHolder;
 
+    private ScalesHandler _scalesHandler;
+
     private float _distance;
 
     private float _time=0;
 
-    public SpaceController(AsyncProcessor asyncProcessor, ViewPool windowPool, ProgressHandler progressHandler, SpaceDataHolder spaceDataHolder, ForceImpulsePhysics forceImpulsePhysics, ThrownBodyPhysics thrownBodyPhysics)
+    public SpaceController(AsyncProcessor asyncProcessor, ViewPool windowPool, ProgressHandler progressHandler, SpaceDataHolder spaceDataHolder, ForceImpulsePhysics forceImpulsePhysics, ThrownBodyPhysics thrownBodyPhysics, ScalesHandler scalesHandler)
     {
         _windowPool = windowPool;
         _asyncProcessor = asyncProcessor;
         _progressHandler = progressHandler;
         _spaceDataHolder = spaceDataHolder;
+        _scalesHandler=scalesHandler;
 
         _view = (SpaceView)_windowPool.GetView(WindowType.SpaceMainWindow);
 
@@ -72,7 +75,7 @@ public class SpaceController: IController
 
             float rotation = _basePhysics.GetRotationByTime(speed, angle, _planet.g, _time);
 
-            _view.SetRocketPosition(indent/15, rotation);
+            _view.SetRocketPosition(indent/_scalesHandler.GetRocketScale().widthScale, rotation);
 
             yield return null;
 
