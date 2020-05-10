@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class SpaceDataHolder
+public class SpaceDataHolder:ISpaceDataHolder
 {
     private List<PlanetInfo> _planets=new List<PlanetInfo>();
 

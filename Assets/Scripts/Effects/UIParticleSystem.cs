@@ -192,7 +192,6 @@ public class UIParticleSystem : MonoBehaviour {
     public void ChangeDirection(Vector2 direction)
     {
         EmissionDirection = direction;
-        Debug.Log(direction);
         ChangeAngle();
     }
 

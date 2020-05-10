@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class GameDataHolder
+public class GameDataHolder:IGameDataHolder
 {
     private GameTexts _texts;
 
@@ -22,4 +22,5 @@ public class GameDataHolder
     {
         _texts = (GameTexts)Resources.Load("GameTexts", typeof(GameTexts));
     }
+
 }

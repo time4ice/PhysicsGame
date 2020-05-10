@@ -15,6 +15,9 @@ public class PlanePrefab:MonoBehaviour
     [SerializeField]
     private Image _planeMaterial;
 
+    [SerializeField]
+    private UIParticleSystem _particleSystem;
+
 
     public void Initialize(float length, Sprite material)
     {
@@ -30,14 +33,29 @@ public class PlanePrefab:MonoBehaviour
             var indent = new Vector3(Time.deltaTime * 20, 0);
             _movingObject.transform.localPosition = - indent;
         }
-
-
     }
+
+
 
     public void SetPosition(Vector3 indent)
     {
         _movingObject.anchoredPosition =  - indent;
        
+    }
+
+    private void SetParticleRotation(float angle)
+    {
+        float x = Mathf.Cos(angle * Mathf.Deg2Rad);
+
+        float y = Mathf.Sin(angle * Mathf.Deg2Rad);
+
+        _particleSystem.ChangeDirection(new Vector2(x, y));
+    }
+
+    public void StartMovementAnimation(float angle)
+    {
+        SetParticleRotation(angle);
+        _particleSystem.Play();
     }
 
 }

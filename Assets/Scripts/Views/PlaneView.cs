@@ -93,4 +93,10 @@ public class PlaneView:WindowView
     {
        _neededSpeedText.text = string.Format(_neededSpeedFormat, speed);
     }
+
+    public void StartMovementAnimation()
+    {
+        _plane.StartMovementAnimation(_angleSlider.GetValue());
+    }
+
 }

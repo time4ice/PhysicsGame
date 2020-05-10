@@ -11,8 +11,8 @@ public class PlaneInstaller : MonoInstaller, IControllerFactory
     public override void InstallBindings()
     {
         Container.BindInstance(_windows);
-        Container.Bind<ViewPool>().AsSingle().WithArguments(_windows);
-        Container.Bind<InclinedPlanePhysics>().AsSingle();
+        Container.Bind<IViewPool>().To<ViewPool>().AsSingle().WithArguments(_windows);
+        Container.Bind<IInclinedPlanePhysics>().To<InclinedPlanePhysics>().AsSingle();
 
         BindControllers();
         Container.Bind(typeof(IControllerFactory)).FromInstance(this).AsSingle();
@@ -22,9 +22,9 @@ public class PlaneInstaller : MonoInstaller, IControllerFactory
 
     public void BindControllers()
     {
-        Container.Bind<PlaneRetryWindowController>().AsSingle();
+        Container.Bind(typeof(PlaneRetryWindowController)).To<PlaneRetryWindowController>().AsSingle();
 
-        Container.Bind<PlaneController>().AsSingle();
+        Container.Bind(typeof(PlaneController)).To<PlaneController>().AsSingle();
     }
 
     public IController CreateController(WindowType type)
@@ -33,7 +33,7 @@ public class PlaneInstaller : MonoInstaller, IControllerFactory
         {
            case WindowType.PlaneRetryWindow:
                 return Container.Resolve<PlaneRetryWindowController>();
-
+              
            case WindowType.PlaneMainWindow:
                 return Container.Resolve<PlaneController>();
 

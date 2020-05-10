@@ -1,7 +1,7 @@
 ﻿using System;
 public class PlaneLoader
 {
-    public PlaneLoader(ViewPool _viewPool)
+    public PlaneLoader(IViewPool _viewPool)
     {
         _viewPool.Get(WindowType.PlaneMainWindow);
     }

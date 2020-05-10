@@ -63,24 +63,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ColorSkies\Demo\Scripts\LookCamera.cs" />
-    <Compile Include="Assets\ColorSkies\Demo\Scripts\SkyboxChanger.cs" />
     <Compile Include="Assets\Scripts\AsyncProcessor.cs" />
-    <Compile Include="Assets\Scripts\Controller\AvailablePlanesController.cs" />
-    <Compile Include="Assets\Scripts\Controller\AvailablePlanetsController.cs" />
-    <Compile Include="Assets\Scripts\Controller\AvailableRocketsController.cs" />
-    <Compile Include="Assets\Scripts\Controller\HomeController.cs" />
-    <Compile Include="Assets\Scripts\Controller\IController.cs" />
-    <Compile Include="Assets\Scripts\Controller\PlaneController.cs" />
-    <Compile Include="Assets\Scripts\Controller\PlaneRetryWindowController.cs" />
-    <Compile Include="Assets\Scripts\Controller\ProfileController.cs" />
-    <Compile Include="Assets\Scripts\Controller\SpaceController.cs" />
-    <Compile Include="Assets\Scripts\Controller\SpaceRetryWindowController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\AvailablePlanesController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\AvailablePlanetsController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\AvailableRocketsController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\HomeController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\IController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\PlaneController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\PlaneRetryWindowController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\ProfileController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\SpaceController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\SpaceRetryWindowController.cs" />
+    <Compile Include="Assets\Scripts\DataControl\ILocalDataController.cs" />
     <Compile Include="Assets\Scripts\DataControl\LocalDataController.cs" />
     <Compile Include="Assets\Scripts\DataHolders\GameDataHolder.cs" />
+    <Compile Include="Assets\Scripts\DataHolders\Interfaces\IGameDataHolder.cs" />
+    <Compile Include="Assets\Scripts\DataHolders\Interfaces\IPlaneDataHolder.cs" />
+    <Compile Include="Assets\Scripts\DataHolders\Interfaces\IPrefabsHolder.cs" />
+    <Compile Include="Assets\Scripts\DataHolders\Interfaces\ISpaceDataHolder.cs" />
     <Compile Include="Assets\Scripts\DataHolders\PlaneDataHolder.cs" />
     <Compile Include="Assets\Scripts\DataHolders\PrefabsHolder.cs" />
     <Compile Include="Assets\Scripts\DataHolders\SpaceDataHolder.cs" />
+    <Compile Include="Assets\Scripts\Effects\UIParticleSystem.cs" />
     <Compile Include="Assets\Scripts\Extentions\Extentions.cs" />
     <Compile Include="Assets\Scripts\Installers\GameInstaller.cs" />
     <Compile Include="Assets\Scripts\Installers\HomeInstaller.cs" />
@@ -91,14 +95,20 @@
     <Compile Include="Assets\Scripts\Loaders\SpaceLoader.cs" />
     <Compile Include="Assets\Scripts\Physics\ForceImpulsePhysics.cs" />
     <Compile Include="Assets\Scripts\Physics\InclinedPlanePhysics.cs" />
+    <Compile Include="Assets\Scripts\Physics\Interfaces\IForceImpulsePhysics.cs" />
+    <Compile Include="Assets\Scripts\Physics\Interfaces\IInclinedPlanePhysics.cs" />
+    <Compile Include="Assets\Scripts\Physics\Interfaces\IThrownBodyPhysics.cs" />
     <Compile Include="Assets\Scripts\Physics\ThrownBodyPhysics.cs" />
     <Compile Include="Assets\Scripts\Progress\Progress.cs" />
     <Compile Include="Assets\Scripts\Progress\ProgressHandler.cs" />
+    <Compile Include="Assets\Scripts\Scales\IScalesHandler.cs" />
+    <Compile Include="Assets\Scripts\Scales\ScalesHandler.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\GameTexts.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Plane\PlaneInfo.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Plane\PlaneMaterial.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\PrefabsInfo.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\ScalesInfo.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Space\PlanetInfo.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Space\SpaceInfo.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Space\SpaceshipInfo.cs" />
@@ -118,6 +128,7 @@
     <Compile Include="Assets\Scripts\Views\Window\RetryWindow.cs" />
     <Compile Include="Assets\Scripts\Views\Window\WindowView.cs" />
     <Compile Include="Assets\Scripts\WindowPool\IControllerFacrory.cs" />
+    <Compile Include="Assets\Scripts\WindowPool\IViewPool.cs" />
     <Compile Include="Assets\Scripts\WindowPool\ViewPool.cs" />
     <Compile Include="Assets\Techno Blue UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -153,7 +164,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\UIParticleEffects\Scripts\UIParticleSystem.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class PlaneDataHolder
+public class PlaneDataHolder:IPlaneDataHolder
 {
     private List<PlaneMaterial> _materials = new List<PlaneMaterial>();
 

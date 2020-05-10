@@ -1,7 +1,7 @@
 ﻿using System;
 public class HomeLoader
 {
-    public HomeLoader(ViewPool _viewPool)
+    public HomeLoader(IViewPool _viewPool)
     {
         _viewPool.Get(WindowType.HomeWindow);
     }

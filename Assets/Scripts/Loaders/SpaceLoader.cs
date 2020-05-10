@@ -1,7 +1,7 @@
 ﻿using System;
 public class SpaceLoader
 {
-    public SpaceLoader(ViewPool _viewPool)
+    public SpaceLoader(IViewPool _viewPool)
     {
         _viewPool.Get(WindowType.SpaceMainWindow);
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ViewPool
+public class ViewPool:IViewPool
 {
     private List<Window> _windowPrefabs;
 

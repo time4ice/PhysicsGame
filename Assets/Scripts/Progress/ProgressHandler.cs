@@ -3,11 +3,11 @@ public class ProgressHandler: IDisposable
 {
     private Progress _progress;
 
-    private LocalDataController _localDataController;
+    private ILocalDataController _localDataController;
 
     public Progress progress => _progress;
 
-    public ProgressHandler(LocalDataController localDataController)
+    public ProgressHandler(ILocalDataController localDataController)
     {
         _localDataController = localDataController;
 

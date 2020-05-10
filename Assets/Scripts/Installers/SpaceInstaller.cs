@@ -11,9 +11,9 @@ public class SpaceInstaller : MonoInstaller, IControllerFactory
     public override void InstallBindings()
     {
         Container.BindInstance(_windows);
-        Container.Bind<ViewPool>().AsSingle().WithArguments(_windows);
-        Container.Bind<ThrownBodyPhysics>().AsSingle();
-        Container.Bind<ForceImpulsePhysics>().AsSingle();
+        Container.Bind<IViewPool>().To<ViewPool>().AsSingle().WithArguments(_windows);
+        Container.Bind<IThrownBodyPhysics>().To<ThrownBodyPhysics>().AsSingle();
+        Container.Bind<IForceImpulsePhysics>().To<ForceImpulsePhysics>().AsSingle();
 
         BindControllers();
         Container.Bind(typeof(IControllerFactory)).FromInstance(this).AsSingle();
@@ -23,9 +23,9 @@ public class SpaceInstaller : MonoInstaller, IControllerFactory
 
     public void BindControllers()
     {
-        Container.Bind<SpaceRetryWindowController>().AsSingle();
+        Container.Bind(typeof(SpaceRetryWindowController)).To<SpaceRetryWindowController>().AsSingle();
 
-        Container.Bind<SpaceController>().AsSingle();
+        Container.Bind(typeof(SpaceController)).To<SpaceController>().AsSingle();
     }
 
     public IController CreateController(WindowType type)

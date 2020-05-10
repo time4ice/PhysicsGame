@@ -4,7 +4,7 @@ using System.Text;
 
 using Newtonsoft.Json;
 
-public class LocalDataController
+public class LocalDataController:ILocalDataController
 {
     public string Serialize<T>(T jsonObject)
     {

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6d84160d44f470ca0549c40d7964e5, type: 3}
+  m_Name: ScalesInfo
+  m_EditorClassIdentifier: 
+  _scales:
+  - _sizeLimits: {x: 0, y: 1}
+    _rocketScale:
+      _heightScale: 15
+      _widthScale: 15
+    _planeScale:
+      _widthScale: 10

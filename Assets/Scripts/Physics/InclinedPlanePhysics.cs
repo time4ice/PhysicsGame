@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class InclinedPlanePhysics
+public class InclinedPlanePhysics: IInclinedPlanePhysics
 {
    public float GetDistance(float a, float t)
     {

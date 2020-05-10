@@ -11,7 +11,7 @@ public class HomeInstaller : MonoInstaller<HomeInstaller>, IControllerFactory
     public override void InstallBindings()
     {
         Container.BindInstance(_windows);
-        Container.Bind<ViewPool>().AsSingle().WithArguments(_windows);
+        Container.Bind<IViewPool>().To<ViewPool>().AsSingle().WithArguments(_windows);
        
         BindControllers();
         Container.Bind(typeof(IControllerFactory)).FromInstance(this).AsSingle();
@@ -22,15 +22,15 @@ public class HomeInstaller : MonoInstaller<HomeInstaller>, IControllerFactory
 
     public void BindControllers()
     {
-        Container.Bind<HomeController>().AsSingle();
+        Container.Bind(typeof(HomeController)).To<HomeController>().AsSingle();
 
-        Container.Bind<ProfileController>().AsSingle();
+        Container.Bind(typeof(ProfileController)).To<ProfileController>().AsSingle();
 
-        Container.Bind<AvailableRocketsController>().AsSingle();
+        Container.Bind(typeof(AvailableRocketsController)).To<AvailableRocketsController > ().AsSingle();
 
-        Container.Bind<AvailablePlanetsController>().AsSingle();
+        Container.Bind(typeof(AvailablePlanetsController)).To<AvailablePlanetsController>().AsSingle();
 
-        Container.Bind<AvailablePlanesController>().AsSingle();
+        Container.Bind(typeof(AvailablePlanesController)).To<AvailablePlanesController>().AsSingle();
 
     }
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class ThrownBodyPhysics
+public class ThrownBodyPhysics:IThrownBodyPhysics
 { 
     public Vector3 GetLocationByTime(float speed, float angle, float g, float time)
     {

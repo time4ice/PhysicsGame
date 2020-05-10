@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42379be4e2a6c4e48971510774ee407c, type: 3}
   m_Name: ShipImage1
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 21300000, guid: 55d18e54bb5c24eabb8f2f10fb23ffc8, type: 3}
+  _sprite: {fileID: 21300000, guid: a85f5180b78ba4db28c36988a222d3ae, type: 3}
