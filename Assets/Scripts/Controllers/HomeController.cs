@@ -21,7 +21,7 @@ public class HomeController:IController, IDisposable
 
     private void OpenWindow(WindowType type)
     {
-        IController controller = _windowPool.Get(type);
+        IController controller = _windowPool.GetController(type);
         controller.Open();
     }
 

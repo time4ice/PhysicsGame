@@ -25,18 +25,6 @@ public class PlanePrefab:MonoBehaviour
         _planeMaterial.sprite = material;
     }
 
-    private IEnumerator Move()
-    {
-        while (true)
-        {
-            yield return null;
-            var indent = new Vector3(Time.deltaTime * 20, 0);
-            _movingObject.transform.localPosition = - indent;
-        }
-    }
-
-
-
     public void SetPosition(Vector3 indent)
     {
         _movingObject.anchoredPosition =  - indent;

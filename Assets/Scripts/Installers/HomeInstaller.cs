@@ -14,24 +14,11 @@ public class HomeInstaller : MonoInstaller<HomeInstaller>, IControllerFactory
         Container.Bind<IViewPool>().To<ViewPool>().AsSingle().WithArguments(_windows);
        
         BindControllers();
+
         Container.Bind(typeof(IControllerFactory)).FromInstance(this).AsSingle();
 
         Container.Bind<HomeLoader>().AsSingle().NonLazy();
         
-    }
-
-    public void BindControllers()
-    {
-        Container.Bind(typeof(HomeController)).To<HomeController>().AsSingle();
-
-        Container.Bind(typeof(ProfileController)).To<ProfileController>().AsSingle();
-
-        Container.Bind(typeof(AvailableRocketsController)).To<AvailableRocketsController > ().AsSingle();
-
-        Container.Bind(typeof(AvailablePlanetsController)).To<AvailablePlanetsController>().AsSingle();
-
-        Container.Bind(typeof(AvailablePlanesController)).To<AvailablePlanesController>().AsSingle();
-
     }
 
     public  IController CreateController(WindowType type)
@@ -56,6 +43,20 @@ public class HomeInstaller : MonoInstaller<HomeInstaller>, IControllerFactory
             default:
                 return null;
         }
+    }
+
+    public void BindControllers()
+    {
+        Container.Bind(typeof(HomeController)).To<HomeController>().AsSingle();
+
+        Container.Bind(typeof(ProfileController)).To<ProfileController>().AsSingle();
+
+        Container.Bind(typeof(AvailableRocketsController)).To<AvailableRocketsController > ().AsSingle();
+
+        Container.Bind(typeof(AvailablePlanetsController)).To<AvailablePlanetsController>().AsSingle();
+
+        Container.Bind(typeof(AvailablePlanesController)).To<AvailablePlanesController>().AsSingle();
+
     }
 
 }

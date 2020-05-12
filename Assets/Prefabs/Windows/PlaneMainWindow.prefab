@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 4815656305083513948}
   - component: {fileID: 4815656305083513951}
   - component: {fileID: 4815656305083513950}
-  - component: {fileID: 4815656305083513946}
+  - component: {fileID: 2254158519933806292}
   m_Layer: 5
   m_Name: PlaneMainWindow
   m_TagString: Untagged
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4815656305083513946
+--- !u!114 &2254158519933806292
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -867,7 +867,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4815656305083513937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 454f621d8ec5944fda839a6954d64fb8, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a8a00fc40ef744438b1b860842051e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _massSlider: {fileID: 5201716826061595921}
@@ -877,11 +877,11 @@ MonoBehaviour:
   _muText: {fileID: 4815656306134640111}
   _muFormat: mu={0}
   _lengthText: {fileID: 4815656305451178107}
-  _lengthFormat: l={0}m
+  _lengthFormat: l={0}
   _neededSpeedText: {fileID: 4815656305560187464}
   _neededSpeedFormat: 'Needed final speed: {0} m/s'
   _currentSpeedText: {fileID: 4815656305641726770}
-  _currentSpeedFormat: 'current speed: {0} m/s'
+  _currentSpeedFormat: 'Current speed: {0} m/s'
   _moveButton: {fileID: 4013857954958398653}
   _plane: {fileID: 4815656305680458084}
 --- !u!1 &4815656305451178106

@@ -3,6 +3,6 @@ public class HomeLoader
 {
     public HomeLoader(IViewPool _viewPool)
     {
-        _viewPool.Get(WindowType.HomeWindow);
+        _viewPool.GetController(WindowType.HomeWindow);
     }
 }

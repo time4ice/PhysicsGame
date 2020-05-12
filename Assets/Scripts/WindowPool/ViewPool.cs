@@ -17,7 +17,7 @@ public class ViewPool:IViewPool
        _controllerFactory = controllerFactory;
     }
 
-    public IController Get(WindowType type)
+    public IController GetController(WindowType type)
     {
         return _controllerFactory.CreateController(type);
     }

@@ -12,9 +12,9 @@ public class PlaneInfo : ScriptableObject
     [Header("Plane length value limits")]
 
     [SerializeField]
-    private float _minLength;
+    private int _minLength;
 
-    public float minLength { get { return _minLength; } }
+    public int minLength { get { return _minLength; } }
 
     [SerializeField]
     private int _maxLength;

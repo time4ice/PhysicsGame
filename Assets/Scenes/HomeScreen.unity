@@ -276,7 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _windows:
   - _type: 7
-    _prefab: {fileID: 7515916934955641318, guid: dc9d1f554bb50442897190c06d3d452e,
+    _prefab: {fileID: 8296172266615848797, guid: dc9d1f554bb50442897190c06d3d452e,
       type: 3}
   - _type: 2
     _prefab: {fileID: 2038592674631191399, guid: 48b2fe87f6f8243558bf82b5b109c22b,

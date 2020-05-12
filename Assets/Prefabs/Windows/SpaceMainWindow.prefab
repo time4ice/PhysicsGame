@@ -360,7 +360,7 @@ MonoBehaviour:
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 258
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 258
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 258
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 258
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 258
@@ -2035,7 +2035,7 @@ MonoBehaviour:
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 258
@@ -3584,7 +3584,7 @@ GameObject:
   - component: {fileID: 871841767708889713}
   - component: {fileID: 871841767708889714}
   - component: {fileID: 871841767708889715}
-  - component: {fileID: 871841767708889719}
+  - component: {fileID: 4342618390007652757}
   m_Layer: 5
   m_Name: SpaceMainWindow
   m_TagString: Untagged
@@ -3679,7 +3679,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &871841767708889719
+--- !u!114 &4342618390007652757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3688,7 +3688,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 871841767708889724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb78c915163874b27a3ea20947543951, type: 3}
+  m_Script: {fileID: 11500000, guid: 18f6543751d6945b7a45dd43883b499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _background: {fileID: 871841767267837705}
@@ -3699,10 +3699,10 @@ MonoBehaviour:
   _destination: {fileID: 871841766513748788}
   _planetName: {fileID: 871841765830221343}
   _g: {fileID: 871841766087199682}
-  _gFormat: g={0}
+  _gFormat: g= {0}
   _flyButton: {fileID: 871841767302981940}
   _influnceDuration: {fileID: 871841767364216214}
-  _influnceDurationFormat: 'Force duration: {0}s'
+  _influnceDurationFormat: 'Force duration: {0}'
   _mass: {fileID: 871841767175030592}
   _massFormat: m={0} kg
 --- !u!1 &4479869761414180887

@@ -23,13 +23,13 @@ public class PlaneController: IController, IDisposable
 
     private PlaneInfo _planeInfo;
 
-    private IScalesHandler _scalesHandler;
+    private IScalesHolder _scalesHandler;
 
     private float _speed;
 
     private float _time = 0;
 
-    public PlaneController(AsyncProcessor asyncProcessor, IViewPool windowPool, ProgressHandler progressHandler, IPlaneDataHolder planeDataHolder, IInclinedPlanePhysics physics, IScalesHandler scalesHandler)
+    public PlaneController(AsyncProcessor asyncProcessor, IViewPool windowPool, ProgressHandler progressHandler, IPlaneDataHolder planeDataHolder, IInclinedPlanePhysics physics, IScalesHolder scalesHandler)
     {
         _windowPool = windowPool;
         _asyncProcessor = asyncProcessor;
@@ -85,7 +85,7 @@ public class PlaneController: IController, IDisposable
 
     private void OpenRetryWindow(bool isWinner)
     {
-        IController retryController = _windowPool.Get(WindowType.PlaneRetryWindow);
+        IController retryController = _windowPool.GetController(WindowType.PlaneRetryWindow);
 
         Dictionary<string, object> parameters = new Dictionary<string, object>();
 

@@ -28,13 +28,13 @@ public class SpaceController: IController, IDisposable
 
     private ISpaceDataHolder _spaceDataHolder;
 
-    private IScalesHandler _scalesHandler;
+    private IScalesHolder _scalesHandler;
 
     private float _distance;
 
     private float _time=0;
 
-    public SpaceController(AsyncProcessor asyncProcessor, IViewPool windowPool, ProgressHandler progressHandler, ISpaceDataHolder spaceDataHolder, IForceImpulsePhysics forceImpulsePhysics, IThrownBodyPhysics thrownBodyPhysics, IScalesHandler scalesHandler)
+    public SpaceController(AsyncProcessor asyncProcessor, IViewPool windowPool, ProgressHandler progressHandler, ISpaceDataHolder spaceDataHolder, IForceImpulsePhysics forceImpulsePhysics, IThrownBodyPhysics thrownBodyPhysics, IScalesHolder scalesHandler)
     {
         _windowPool = windowPool;
         _asyncProcessor = asyncProcessor;
@@ -88,7 +88,7 @@ public class SpaceController: IController, IDisposable
 
     private void OpenRetryWindow(bool isWinner)
     {
-        IController retryController = _windowPool.Get(WindowType.SpaceRetryWindow);
+        IController retryController = _windowPool.GetController(WindowType.SpaceRetryWindow);
 
         Dictionary<string, object> parameters = new Dictionary<string, object>();
 

@@ -13,14 +13,14 @@ public class GameInstaller : MonoInstaller
         Debug.Log("GameInstaller");
         Container.BindInstance(_asyncProcessor);
 
-        Container.Bind(typeof(IDisposable), typeof(ProgressHandler)).To<ProgressHandler>().AsSingle();
+        Container.Bind(typeof(ProgressHandler)).To<ProgressHandler>().AsSingle();
 
         Container.Bind<IPrefabsHolder>().To<PrefabsHolder>().AsSingle();
 
         Container.Bind<ILocalDataController>().To<LocalDataController>().AsSingle();
 
         Container.Bind<IGameDataHolder>().To<GameDataHolder>().AsSingle();
-        Container.Bind<IScalesHandler>().To<ScalesHandler>().AsSingle();
+        Container.Bind<IScalesHolder>().To<ScalesHolder>().AsSingle();
 
         Container.Bind<IPlaneDataHolder>().To<PlaneDataHolder>().AsSingle();
         Container.Bind<ISpaceDataHolder>().To<SpaceDataHolder>().AsSingle();

@@ -279,7 +279,7 @@ MonoBehaviour:
     _prefab: {fileID: 2926212662456221888, guid: 08c25e909b79143699f2569a569decd2,
       type: 3}
   - _type: 6
-    _prefab: {fileID: 4815656305083513946, guid: 670f20c3a90cb4071a10ae5c0e877ec1,
+    _prefab: {fileID: 2254158519933806292, guid: 670f20c3a90cb4071a10ae5c0e877ec1,
       type: 3}
 --- !u!114 &1698537253
 MonoBehaviour:

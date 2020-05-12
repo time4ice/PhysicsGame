@@ -1,5 +1,5 @@
 ﻿using System;
-public class ProgressHandler: IDisposable
+public class ProgressHandler
 {
     private Progress _progress;
 
@@ -46,6 +46,8 @@ public class ProgressHandler: IDisposable
         {
             _progress.space.looses -= points;
         }
+
+        Save();
     }
 
     public void AddPlanePoints(int points)
@@ -59,10 +61,8 @@ public class ProgressHandler: IDisposable
         {
             _progress.plane.looses -= points;
         }
-    }
 
-    public void Dispose()
-    {
         Save();
     }
+
 }
