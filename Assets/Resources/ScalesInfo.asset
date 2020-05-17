@@ -15,7 +15,7 @@ MonoBehaviour:
   _scales:
   - _sizeLimits: {x: 0, y: 1}
     _rocketScale:
-      _heightScale: 15
-      _widthScale: 15
+      _heightScale: 1200
+      _widthScale: 1200
     _planeScale:
       _widthScale: 10

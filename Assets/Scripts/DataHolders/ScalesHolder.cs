@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class ScalesHolder:IScalesHolder
         LoadAssets();
     }
 
+    
     public PlaneScale GetPlaneScale()
     {
         return _scale.planeScale;

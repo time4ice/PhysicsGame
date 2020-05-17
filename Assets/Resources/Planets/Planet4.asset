@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Planet4
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: Avalon
   _surface: {fileID: 11400000, guid: 6f6e44adad60a4c328339278b5b0c379, type: 2}
   _sky: {fileID: 11400000, guid: 331f9d2bb63424997ab7905701899ccf, type: 2}
   _icon: {fileID: 11400000, guid: 6f6e44adad60a4c328339278b5b0c379, type: 2}
-  _g: 9.8
+  _g: 10

@@ -103,6 +103,8 @@
     <Compile Include="Assets\Scripts\Physics\ThrownBodyPhysics.cs" />
     <Compile Include="Assets\Scripts\Progress\Progress.cs" />
     <Compile Include="Assets\Scripts\Progress\ProgressHandler.cs" />
+    <Compile Include="Assets\Scripts\Scales\DistanceScale.cs" />
+    <Compile Include="Assets\Scripts\Scales\IDistanceScale.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\GameTexts.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Plane\PlaneInfo.cs" />
@@ -117,6 +119,7 @@
     <Compile Include="Assets\Scripts\Views\BasePrefab.cs" />
     <Compile Include="Assets\Scripts\Views\DestinationView.cs" />
     <Compile Include="Assets\Scripts\Views\PlanePrefab.cs" />
+    <Compile Include="Assets\Scripts\Views\QuitView.cs" />
     <Compile Include="Assets\Scripts\Views\RocketView.cs" />
     <Compile Include="Assets\Scripts\Views\RotationSliderView.cs" />
     <Compile Include="Assets\Scripts\Views\SliderView.cs" />

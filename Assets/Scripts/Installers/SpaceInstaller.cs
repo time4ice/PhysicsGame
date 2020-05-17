@@ -14,6 +14,7 @@ public class SpaceInstaller : MonoInstaller, IControllerFactory
         Container.Bind<IViewPool>().To<ViewPool>().AsSingle().WithArguments(_windows);
         Container.Bind<IThrownBodyPhysics>().To<ThrownBodyPhysics>().AsSingle();
         Container.Bind<IForceImpulsePhysics>().To<ForceImpulsePhysics>().AsSingle();
+        Container.Bind<IDistanceScale>().To<DistanceScale>().AsSingle().NonLazy();
 
         BindControllers();
         Container.Bind(typeof(IControllerFactory)).FromInstance(this).AsSingle();

@@ -16,4 +16,4 @@ MonoBehaviour:
   _materialName: Metal
   _view: {fileID: 11400000, guid: 3225bc2921857428195ba06749b7c664, type: 2}
   _icon: {fileID: 11400000, guid: 3225bc2921857428195ba06749b7c664, type: 2}
-  _mu: 0.02
+  _mu: 0.4

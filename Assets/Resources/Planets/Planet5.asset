@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Planet5
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: 
   _surface: {fileID: 11400000, guid: 474718edc9f1045858c466877a84ca26, type: 2}
   _sky: {fileID: 11400000, guid: 7940040cde48540e5857869309367280, type: 2}
   _icon: {fileID: 11400000, guid: 474718edc9f1045858c466877a84ca26, type: 2}

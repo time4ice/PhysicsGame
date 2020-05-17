@@ -62,7 +62,7 @@ public class PlaneController: IController, IDisposable
         float finalSpeed = _basePhysics.GetSpeed(a, _basePhysics.GetTime(_planeLength, a), 0);
         do
         {
-            _time += Time.deltaTime * 10;
+            _time += Time.deltaTime*5;
 
             distance = _basePhysics.GetDistance(a, _time);
 
@@ -80,6 +80,7 @@ public class PlaneController: IController, IDisposable
 
         bool isWin = CheckSpeedIndent(finalSpeed);
         _progressHandler.AddPlanePoints(isWin ? 1 : -1);
+        _view.StopMovementAnimation();
         OpenRetryWindow(isWin);
     }
 

@@ -1,0 +1,4 @@
+#Sun May 17 19:55:40 EEST 2020
+base.0=/Users/lillykukharets/Desktop/Physics/Temp/gradleOut/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

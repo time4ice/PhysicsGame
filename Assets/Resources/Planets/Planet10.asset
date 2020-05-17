@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Planet10
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: Unity
   _surface: {fileID: 11400000, guid: f30d72f25526d496cb145dffab4d022b, type: 2}
   _sky: {fileID: 11400000, guid: a0e3eeb09fb8d4b81a571d8f6b345b2d, type: 2}
   _icon: {fileID: 11400000, guid: f30d72f25526d496cb145dffab4d022b, type: 2}
-  _g: 9.8
+  _g: 11.5

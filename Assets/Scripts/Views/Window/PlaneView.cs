@@ -48,6 +48,8 @@ public class PlaneView:WindowView
     [SerializeField]
     private PlanePrefab _plane;
 
+    private bool _isButtonlocked;
+
 
     public Action<float, float> onMoveStart;
 
@@ -75,7 +77,11 @@ public class PlaneView:WindowView
 
     private void ReturnValues()
     {
-        onMoveStart.Invoke(_angleSlider.GetValue(), _massSlider.GetValue());
+        if (!_isButtonlocked)
+        {
+            _isButtonlocked = true;
+            onMoveStart.Invoke(_angleSlider.GetValue(), _massSlider.GetValue());
+        }
     }
 
 
@@ -97,6 +103,11 @@ public class PlaneView:WindowView
     public void StartMovementAnimation()
     {
         _plane.StartMovementAnimation(_angleSlider.GetValue());
+    }
+
+    public void StopMovementAnimation()
+    {
+        _plane.StopMovementAnimation();
     }
 
 }

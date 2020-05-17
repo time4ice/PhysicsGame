@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Spaceship4
   m_EditorClassIdentifier: 
   _wins: 0
-  _spaceshipName: Spaceship4
+  _spaceshipName: Firesstorm
   _sprite: {fileID: 11400000, guid: 5f616c01884a846d7af51f315ce95186, type: 2}
-  _mass: 2
+  _mass: 275000

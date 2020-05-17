@@ -28,19 +28,19 @@ public class SpaceController: IController, IDisposable
 
     private ISpaceDataHolder _spaceDataHolder;
 
-    private IScalesHolder _scalesHandler;
+    private IDistanceScale _scale;
 
     private float _distance;
 
     private float _time=0;
 
-    public SpaceController(AsyncProcessor asyncProcessor, IViewPool windowPool, ProgressHandler progressHandler, ISpaceDataHolder spaceDataHolder, IForceImpulsePhysics forceImpulsePhysics, IThrownBodyPhysics thrownBodyPhysics, IScalesHolder scalesHandler)
+    public SpaceController(AsyncProcessor asyncProcessor, IViewPool windowPool, ProgressHandler progressHandler, ISpaceDataHolder spaceDataHolder, IForceImpulsePhysics forceImpulsePhysics, IThrownBodyPhysics thrownBodyPhysics, IDistanceScale scale)
     {
         _windowPool = windowPool;
         _asyncProcessor = asyncProcessor;
         _progressHandler = progressHandler;
         _spaceDataHolder = spaceDataHolder;
-        _scalesHandler = scalesHandler;
+        _scale = scale;
 
         _basePhysics = thrownBodyPhysics;
         _forcePhysics = forceImpulsePhysics;
@@ -59,7 +59,7 @@ public class SpaceController: IController, IDisposable
     private void ImitateFlight(int angle, int force)
     {
         float speed = _forcePhysics.GetSpeedDiffByForce(force, _forceInfluenceDuration, _ship.mass);
-        _view.StartMovementAnimation();
+      //  _view.StartMovementAnimation();
         _asyncProcessor.StartCoroutine(FlyCoroutine(angle, speed));
     }
 
@@ -69,13 +69,14 @@ public class SpaceController: IController, IDisposable
         float distance = _basePhysics.GetFlightLength(speed, angle, _planet.g);
         do
         {
-            _time += Time.deltaTime * 10;
+            _time += Time.deltaTime*10;
+           // Debug.Log(Time.deltaTime);
 
             indent = _basePhysics.GetLocationByTime(speed, angle, _planet.g, _time);
 
             float rotation = _basePhysics.GetRotationByTime(speed, angle, _planet.g, _time);
 
-            _view.SetRocketPosition(indent/_scalesHandler.GetRocketScale().widthScale, rotation);
+            _view.SetRocketPosition(indent*_scale.coeff, rotation);
 
             yield return null;
 
@@ -83,6 +84,8 @@ public class SpaceController: IController, IDisposable
 
         bool isWin = CheckDistanceIndent(distance);
         _progressHandler.AddSpacePoints(isWin ? 1 : -1);
+        _view.StopMovementAnimation();
+
         OpenRetryWindow(isWin);
     }
 
@@ -118,9 +121,9 @@ public class SpaceController: IController, IDisposable
 
         float speed = _forcePhysics.GetSpeedDiffByForce(force, _forceInfluenceDuration, _ship.mass);
          _distance = _basePhysics.GetFlightLength(speed, angle, _planet.g);
-       // _distance = _basePhysics.GetFlightLength(200, 60, _planet.g);
+      //  _distance = _basePhysics.GetFlightLength(200, 60, _planet.g);
 
-        _view.SetDistance(_distance/15, 1);
+        _view.SetDistance(_distance, _scale.coeff, 1);
     }
 
     public void Open(Dictionary<string, object> parameters = null)

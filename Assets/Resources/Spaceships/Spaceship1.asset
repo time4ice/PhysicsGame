@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Spaceship1
   m_EditorClassIdentifier: 
   _wins: 0
-  _spaceshipName: Spaceship1
+  _spaceshipName: Brave Bird
   _sprite: {fileID: 11400000, guid: 44163bda58ab3487caa7db220310189b, type: 2}
-  _mass: 2
+  _mass: 300000

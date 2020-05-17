@@ -132,6 +132,11 @@ public class UIParticleSystem : MonoBehaviour {
         StartCoroutine(CoPlay());
     }
 
+    public void Stop()
+    {
+        IsPlaying = false;
+    }
+
     private IEnumerator CoPlay()
     {
         Playtime = 0f;

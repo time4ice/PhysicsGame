@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Planet7
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: Maria Curie
   _surface: {fileID: 11400000, guid: d8af2727f0da44b5c9f6887f7d13332f, type: 2}
   _sky: {fileID: 11400000, guid: d47ec48e185f54a1b9b3dc55aef7c503, type: 2}
   _icon: {fileID: 11400000, guid: d8af2727f0da44b5c9f6887f7d13332f, type: 2}
-  _g: 9.8
+  _g: 11.2

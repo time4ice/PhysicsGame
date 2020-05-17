@@ -46,4 +46,8 @@ public class PlanePrefab:MonoBehaviour
         _particleSystem.Play();
     }
 
+    internal void StopMovementAnimation()
+    {
+        _particleSystem.Stop();
+    }
 }

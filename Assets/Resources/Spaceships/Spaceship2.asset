@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Spaceship2
   m_EditorClassIdentifier: 
   _wins: 0
-  _spaceshipName: Spaceship2
+  _spaceshipName: Wind
   _sprite: {fileID: 11400000, guid: b17c064f9ae454d06b8061c574b44eb7, type: 2}
-  _mass: 2
+  _mass: 350000

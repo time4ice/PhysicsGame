@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Planet9
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: Sasuke
   _surface: {fileID: 11400000, guid: 1e91e64ab706c46c5a5a538105563f66, type: 2}
   _sky: {fileID: 11400000, guid: caec01f78696a408e81dd3c67ba6fe53, type: 2}
   _icon: {fileID: 11400000, guid: 1e91e64ab706c46c5a5a538105563f66, type: 2}
-  _g: 9.8
+  _g: 7

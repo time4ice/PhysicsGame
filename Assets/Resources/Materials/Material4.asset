@@ -16,4 +16,4 @@ MonoBehaviour:
   _materialName: Brick
   _view: {fileID: 11400000, guid: ae009eb4c1d3f49e09b7a1bbba58d58a, type: 2}
   _icon: {fileID: 11400000, guid: ae009eb4c1d3f49e09b7a1bbba58d58a, type: 2}
-  _mu: 0.02
+  _mu: 0.6

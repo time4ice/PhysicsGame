@@ -16,4 +16,4 @@ MonoBehaviour:
   _materialName: Beton
   _view: {fileID: 11400000, guid: c151ca00e4087448eb2dffc245ba153a, type: 2}
   _icon: {fileID: 11400000, guid: c151ca00e4087448eb2dffc245ba153a, type: 2}
-  _mu: 0.02
+  _mu: 0.62

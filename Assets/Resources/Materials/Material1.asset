@@ -16,4 +16,4 @@ MonoBehaviour:
   _materialName: Wood
   _view: {fileID: 11400000, guid: ebe8ebc661bf74dbcb7d55af60acf717, type: 2}
   _icon: {fileID: 11400000, guid: ebe8ebc661bf74dbcb7d55af60acf717, type: 2}
-  _mu: 0.02
+  _mu: 0.3

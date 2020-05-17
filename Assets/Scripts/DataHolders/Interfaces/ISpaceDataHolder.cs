@@ -13,8 +13,11 @@ public interface ISpaceDataHolder
 
     SpaceshipInfo GetSpaceship(string name);
 
+    float GetMinSpaceshipMass();
+
     List<SpaceshipInfo> GetSpaceships();
 
     SpaceInfo GetSpaceInfo();
 
+    float GetMinG();
 }

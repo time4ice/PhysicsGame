@@ -48,4 +48,8 @@ public class RocketView:MonoBehaviour
         _particleSystem.Play();
     }
 
+    internal void StopMovementAnimation()
+    {
+        _particleSystem.Stop();
+    }
 }

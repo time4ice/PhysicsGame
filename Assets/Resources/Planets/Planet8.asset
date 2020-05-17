@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Planet8
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: Naruto
   _surface: {fileID: 11400000, guid: 0dbbb6dad893e48c9ade0125fc2d6eb8, type: 2}
   _sky: {fileID: 11400000, guid: 06e44f1432024485cb4462f462284991, type: 2}
   _icon: {fileID: 11400000, guid: 0dbbb6dad893e48c9ade0125fc2d6eb8, type: 2}
-  _g: 9.8
+  _g: 8.3

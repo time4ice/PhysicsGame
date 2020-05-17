@@ -23,10 +23,7 @@ public class HomeView: WindowView
     [SerializeField]
     private Button _planeGameButton;
 
-    [SerializeField]
-    private TMP_Text _path;
-
-    public Action<SceneType> onSceneOpen;
+   public Action<SceneType> onSceneOpen;
 
     public Action<WindowType> onWindowOpen;
 
@@ -44,6 +41,6 @@ public class HomeView: WindowView
 
         _planeGameButton.onClick.AddListener(() => onSceneOpen?.Invoke(SceneType.PlaneGame));
 
-        _path.text = Application.dataPath;
+  
     }
 }

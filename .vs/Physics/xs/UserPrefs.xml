@@ -1,64 +1,10 @@
 ﻿<Properties StartupConfiguration="{2F00C848-03D2-452F-506A-EE212A5702EC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Physics/InclinedPlanePhysics.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controllers/PlaneController.cs">
     <Files>
-      <File FileName="Assets/Scripts/DataHolders/PlaneDataHolder.cs" Line="32" Column="34" />
-      <File FileName="Assets/Scripts/Installers/PlaneInstaller.cs" />
-      <File FileName="Assets/Scripts/Loaders/PlaneLoader.cs" />
-      <File FileName="Assets/Scripts/Controllers/PlaneController.cs" />
-      <File FileName="Assets/Scripts/WindowPool/IViewPool.cs" />
-      <File FileName="Assets/Scripts/WindowPool/ViewPool.cs" />
-      <File FileName="Assets/Scripts/WindowPool/IControllerFacrory.cs" />
-      <File FileName="Assets/Scripts/Installers/HomeInstaller.cs" />
-      <File FileName="Assets/Scripts/Installers/GameInstaller.cs" Line="16" Column="73" />
-      <File FileName="Assets/Scripts/Loaders/HomeLoader.cs" />
-      <File FileName="Assets/Scripts/Loaders/SpaceLoader.cs" />
-      <File FileName="Assets/Scripts/Effects/UIParticleSystem.cs" />
-      <File FileName="Assets/Scripts/Extentions/Extentions.cs" />
-      <File FileName="Assets/Scripts/Installers/SpaceInstaller.cs" />
-      <File FileName="Assets/Scripts/DataHolders/PrefabsHolder.cs" />
-      <File FileName="Assets/Scripts/DataHolders/SpaceDataHolder.cs" />
-      <File FileName="Assets/Scripts/Controllers/AvailablePlanesController.cs" />
-      <File FileName="Assets/Scripts/Controllers/PlaneRetryWindowController.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/GameTexts.cs" />
-      <File FileName="Assets/Scripts/Physics/InclinedPlanePhysics.cs" Line="18" Column="108" />
+      <File FileName="Assets/Scripts/Controllers/SpaceController.cs" Line="62" Column="9" />
       <File FileName="Assets/Scripts/Physics/ForceImpulsePhysics.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Physics/ThrownBodyPhysics.cs" />
-      <File FileName="Assets/Scripts/Controllers/SpaceController.cs" />
-      <File FileName="Assets/Scripts/Views/AvailableItem.cs" />
-      <File FileName="Assets/Scripts/Views/Window/ProfileView.cs" />
-      <File FileName="Assets/Scripts/Views/Window/AvailableItemsView.cs" />
-      <File FileName="Assets/Scripts/Views/Window/WindowView.cs" />
-      <File FileName="Assets/Scripts/Views/Window/RetryWindow.cs" />
-      <File FileName="Assets/Scripts/Views/RocketView.cs" />
-      <File FileName="Assets/Scripts/Views/BasePrefab.cs" />
-      <File FileName="Assets/Scripts/Views/DestinationView.cs" />
-      <File FileName="Assets/Scripts/DataControl/LocalDataController.cs" Line="11" Column="63" />
-      <File FileName="Assets/Scripts/Controllers/IController.cs" />
-      <File FileName="Assets/Scripts/Controllers/ProfileController.cs" />
-      <File FileName="Assets/Scripts/Controllers/HomeController.cs" />
-      <File FileName="Assets/Scripts/AsyncProcessor.cs" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/Space/PlanetInfo.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/Plane/PlaneInfo.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/PrefabsInfo.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/ScalesInfo.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/SpriteView.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/Plane/PlaneMaterial.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/Space/SpaceInfo.cs" />
-      <File FileName="Assets/Scripts/ScriptableObjects/Space/SpaceshipInfo.cs" />
-      <File FileName="Assets/Scripts/Progress/Progress.cs" />
-      <File FileName="Assets/Scripts/Progress/ProgressHandler.cs" Line="2" Column="24" />
-      <File FileName="Assets/Scripts/Views/Window/HomeView.cs" />
-      <File FileName="Assets/Scripts/Views/Window/PlaneView.cs" />
-      <File FileName="Assets/Scripts/Views/Window/SpaceView.cs" />
-      <File FileName="Assets/Scripts/Views/PlanePrefab.cs" />
-      <File FileName="Assets/Scripts/Views/RotationSliderView.cs" />
-      <File FileName="Assets/Scripts/Views/SliderView.cs" />
-      <File FileName="Assets/Scripts/Controllers/AvailablePlanetsController.cs" />
-      <File FileName="Assets/Scripts/Controllers/AvailableRocketsController.cs" />
-      <File FileName="Assets/Scripts/Controllers/SpaceRetryWindowController.cs" />
-      <File FileName="Assets/Scripts/DataHolders/GameDataHolder.cs" />
-      <File FileName="Assets/Scripts/DataControl/ILocalDataController.cs" Line="7" Column="12" />
+      <File FileName="Assets/Scripts/Views/Window/SpaceView.cs" Line="65" Column="91" />
+      <File FileName="Assets/Scripts/Controllers/PlaneController.cs" Line="65" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -67,13 +13,25 @@
             <Node name="Assets" expanded="True">
               <Node name="Plugins" expanded="True" />
               <Node name="Scripts" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="PlaneController.cs" selected="True" />
+                </Node>
                 <Node name="DataControl" expanded="True" />
-                <Node name="DataHolders" expanded="True" />
+                <Node name="DataHolders" expanded="True">
+                  <Node name="Interfaces" expanded="True" />
+                </Node>
+                <Node name="Effects" expanded="True" />
+                <Node name="Extentions" expanded="True" />
                 <Node name="Installers" expanded="True" />
+                <Node name="Loaders" expanded="True" />
                 <Node name="Physics" expanded="True">
-                  <Node name="InclinedPlanePhysics.cs" selected="True" />
+                  <Node name="Interfaces" expanded="True" />
                 </Node>
                 <Node name="Progress" expanded="True" />
+                <Node name="Scales" expanded="True" />
+                <Node name="ScriptableObjects" expanded="True">
+                  <Node name="Space" expanded="True" />
+                </Node>
                 <Node name="Views" expanded="True">
                   <Node name="Window" expanded="True" />
                 </Node>
@@ -88,7 +46,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6dde1a74-ba55-4f8f-9761-a71bbeae7445" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d95d6078-638f-4685-9a75-1354bd50a076" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-6363dfa59c2624014a5ae0f31f00edc2" relfile="Temp/UnityTempFile-6363dfa59c2624014a5ae0f31f00edc2" line="64" column="1" />
@@ -98,7 +56,7 @@
       <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-a98e677caaca6414b8929c25239b536d" relfile="Temp/UnityTempFile-a98e677caaca6414b8929c25239b536d" line="17" column="1" />
       <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-a98e677caaca6414b8929c25239b536d" relfile="Temp/UnityTempFile-a98e677caaca6414b8929c25239b536d" line="18" column="1" />
       <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Temp/UnityTempFile-cfda9b0686a774afb8441526bb819bf5" relfile="Temp/UnityTempFile-cfda9b0686a774afb8441526bb819bf5" line="17" column="1" />
-      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/DataHolders/ScalesHolder.cs" relfile="Assets/Scripts/DataHolders/ScalesHolder.cs" line="28" column="1" />
+      <Breakpoint file="/Users/lillykukharets/Desktop/Physics/Assets/Scripts/Scales/DistanceScale.cs" relfile="Assets/Scripts/Scales/DistanceScale.cs" line="20" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

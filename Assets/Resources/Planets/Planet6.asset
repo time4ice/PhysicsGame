@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Planet6
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: Konoha
   _surface: {fileID: 11400000, guid: 542db27c293dc4cbdb8291b8afd1e4ca, type: 2}
   _sky: {fileID: 11400000, guid: b593ec1728bf44810a0be8f66d33833a, type: 2}
   _icon: {fileID: 11400000, guid: 542db27c293dc4cbdb8291b8afd1e4ca, type: 2}
-  _g: 9.8
+  _g: 10.6

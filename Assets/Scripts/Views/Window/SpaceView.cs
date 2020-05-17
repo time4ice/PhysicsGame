@@ -47,10 +47,10 @@ public class SpaceView: WindowView
     [SerializeField]
     private string _massFormat;
 
-
+    private bool _isButtonlocked;
 
     public Action<int, int> onFlightStart;
-
+    
     private void Start()
     {
         _flyButton.onClick.AddListener(() => ReturnValues());
@@ -58,14 +58,19 @@ public class SpaceView: WindowView
 
     private void ReturnValues()
     {
-        onFlightStart.Invoke(_angleSlider.GetValue(), _forceSlider.GetValue());
+        if (!_isButtonlocked)
+        {
+            _isButtonlocked = true;
+
+            onFlightStart.Invoke(_angleSlider.GetValue(), _forceSlider.GetValue()* 1000000);
+        }
     }
 
     public void Initialize(SpaceInfo spaceInfo, SpaceshipInfo spaceship, PlanetInfo planet, int forceDuration)
     {
         _rocket.Initialize(spaceship);
 
-        _forceSlider.Initialize(spaceInfo.minForce, spaceInfo.maxForce);
+        _forceSlider.Initialize(spaceInfo.minForce/1000000, spaceInfo.maxForce/1000000);
 
         _angleSlider.Initialize(spaceInfo.minAngle, spaceInfo.maxAngle);
 
@@ -90,9 +95,9 @@ public class SpaceView: WindowView
         _rocket.SetPosition(indent, angle);
     }
 
-    public void SetDistance(float distance, float indent)
+    public void SetDistance(float distance, float coeff, float indent)
     {
-        _destination.Initialize(_rocket.gameObject.transform.localPosition, distance, indent);
+        _destination.Initialize(_rocket.gameObject.transform.localPosition, distance, coeff, indent);
     }
 
     public void StartMovementAnimation()
@@ -100,7 +105,10 @@ public class SpaceView: WindowView
         _rocket.StartMovementAnimation();
     }
 
-
+    public void StopMovementAnimation()
+    {
+        _rocket.StopMovementAnimation();
+    }
 
 
 }

@@ -40,6 +40,12 @@ public class SpaceDataHolder:ISpaceDataHolder
     {
         return _spaceShips.FirstOrDefault(s => s.name == name);
     }
+
+    public float GetMinSpaceshipMass()
+    {
+        return _spaceShips.Select(s=>s.mass).Min();
+    }
+
     public List<SpaceshipInfo> GetSpaceships()
     {
         return _spaceShips.OrderBy(s => s.wins).ToList();
@@ -63,5 +69,10 @@ public class SpaceDataHolder:ISpaceDataHolder
         }
        
         _spaceInfo = (SpaceInfo) Resources.Load("SpaceInfo", typeof(SpaceInfo));
+    }
+
+    public float GetMinG()
+    {
+        return _planets.Select(p => p.g).Min();
     }
 }

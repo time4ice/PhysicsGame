@@ -125,7 +125,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 419e74a5eaa0916d4ced7154140f15ad Assembly-CSharp.dll:.SpaceInstaller
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-95d5acc36a22116263ebbeb03f7f6bdd Assembly-CSharp.dll:.HomeView
+017d660b7ed8ed7029abe401360d2948 Assembly-CSharp.dll:.HomeView
 4d16cfbaa8e821a2b370e80844a0e9bc Assembly-CSharp.dll:TMPro.Examples.Benchmark03
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
@@ -238,3 +238,4 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 b46cfa96b4a8b86c25cf08d8b4069b53 Assembly-CSharp.dll:.ProfileView
 82a50d94cbef39f5cca599d57a3bac4d Assembly-CSharp.dll:.AvailableItemsView
 a9118fb5f6d913bd7f7536f843376959 Zenject.dll:Zenject.ZenjectBinding
+bebcaf2940ef27321bbf04b992d9a9cc Assembly-CSharp.dll:.QuitView

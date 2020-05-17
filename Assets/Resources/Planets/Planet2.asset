@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Planet2
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: Penelopa
   _surface: {fileID: 11400000, guid: 85a015ce33d094a91af7f1fb8254158f, type: 2}
   _sky: {fileID: 11400000, guid: 0677f02af137f47ef9d8ae1b195ff79b, type: 2}
   _icon: {fileID: 11400000, guid: 85a015ce33d094a91af7f1fb8254158f, type: 2}
-  _g: 9.8
+  _g: 6.5

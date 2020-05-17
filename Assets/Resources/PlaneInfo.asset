@@ -15,8 +15,8 @@ MonoBehaviour:
   _g: 9.8
   _minLength: 100
   _maxLength: 800
-  _minMass: 100
-  _maxMass: 200
-  _minAngle: 1
-  _maxAngle: 89
+  _minMass: 10
+  _maxMass: 20
+  _minAngle: 10
+  _maxAngle: 85
   _finalSpeedLimits: {x: 1, y: 1}

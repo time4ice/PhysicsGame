@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Planet3
   m_EditorClassIdentifier: 
   _wins: 0
-  _planetName: Planet1
+  _planetName: Duke
   _surface: {fileID: 11400000, guid: 5f20696ca1e484229b06585e6e30f764, type: 2}
   _sky: {fileID: 11400000, guid: b865542112a6c46828b6a49b0357d0ab, type: 2}
   _icon: {fileID: 11400000, guid: 5f20696ca1e484229b06585e6e30f764, type: 2}
-  _g: 9.8
+  _g: 12
